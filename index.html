@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pedra Papel Tesoura</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="pedra-papel-tesoura.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Pedra Papel Tesoura</h1>
+    </header>
+    <main>
+      <div class="scoreboard">
+        <h2 class="score-info" id="scoreInfo">Escolha entre pedra, papel ou tesoura</h2>
+        <h3 class="score-message" id="scoreMessage">
+          O primeiro a chegar aos 5 pontos ganha o jogo
+        </h3>
+        <div class="scores-contador">
+          <div class="score-box">
+            <div class="sign" id="playerSign">❔</div>
+            <p class="score" id="playerScore">Jogador: 0</p>
+          </div>
+          <div class="score-box">
+            <div class="sign" id="computerSign">❔</div>
+            <p class="score" id="computerScore">Computador: 0</p>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="btn-square" id="rockBtn">
+          <div class="sinal"><img src="pedra.jpeg" alt="Pedra"></div>
+        </button>
+        <button class="btn-square" id="paperBtn">
+          <div class="sinal"><img src="papel.jpeg" alt="Papel"></div>
+        </button>
+        <button class="btn-square" id="scissorsBtn">
+          <div class="sinal"><img src="tesoura.jpeg" alt="Tesoura"></div>
+        </button>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>
+        Pedra Papel Tesoura || Diogo Santos
+    </footer>
+    <div class="modal" id="endgameModal">
+      <p class="modal-title" id="endgameMsg"></p>
+      <button class="btn-restart" id="restartBtn">Jogar novamente</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
