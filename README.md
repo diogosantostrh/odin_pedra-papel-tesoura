@@ -1,1 +1,0 @@
-# odin_pedra-papel-tesoura
